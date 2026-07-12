@@ -4,23 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - Spexa</title>
+    <meta name="description" content="Read the current Spexa Terms of Use for app access, subscriptions, AI language tutor features, user obligations, and legal contact details.">
+    <link rel="canonical" href="https://tou.spexa.space/">
     <style>
+        :root {
+            --spexa-ink: #172a24;
+            --spexa-muted: #66736d;
+            --spexa-green: #123c31;
+            --spexa-cream: #fffdf9;
+            --spexa-line: rgba(23, 42, 36, 0.1);
+            --spexa-gold: #fef8ad;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            color: var(--spexa-ink);
+            max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background: #fff;
+            background:
+                radial-gradient(circle at top right, rgba(254, 248, 173, 0.55), transparent 28rem),
+                var(--spexa-cream);
+        }
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 14px 0 44px;
+            padding: 18px 22px;
+            border: 1px solid var(--spexa-line);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 20px 70px -52px rgba(23, 42, 36, 0.65);
+            backdrop-filter: blur(18px);
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--spexa-ink);
+            font-size: 1.35rem;
+            font-weight: 750;
+            letter-spacing: -0.04em;
+            text-decoration: none;
+        }
+        .brand img {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            box-shadow: 0 10px 26px -18px rgba(0, 0, 0, 0.65);
+        }
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+        .site-nav a {
+            border-radius: 999px;
+            color: var(--spexa-muted);
+            padding: 9px 14px;
+            text-decoration: none;
+            transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+        }
+        .site-nav a:hover,
+        .site-nav a[aria-current="page"] {
+            background: #eef4ef;
+            color: var(--spexa-ink);
+            transform: translateY(-1px);
+            text-decoration: none;
+        }
+        main {
+            background: rgba(255, 255, 255, 0.74);
+            border: 1px solid var(--spexa-line);
+            border-radius: 28px;
+            padding: clamp(24px, 4vw, 44px);
+            box-shadow: 0 28px 90px -70px rgba(23, 42, 36, 0.75);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 28px;
+            border: 1px solid rgba(23, 42, 36, 0.1);
+            border-radius: 999px;
+            background: #f3f7f4;
+            color: var(--spexa-green);
+            font-weight: 700;
+            padding: 10px 14px;
+            text-decoration: none;
+            transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+        }
+        .back-link:hover {
+            background: #eef4ef;
+            border-color: rgba(23, 42, 36, 0.18);
+            transform: translateY(-1px);
+            text-decoration: none;
         }
         h1 {
-            font-size: 2em;
+            font-size: clamp(2.25rem, 6vw, 4rem);
+            line-height: 1;
+            letter-spacing: -0.06em;
             margin-bottom: 10px;
         }
         h2 {
-            font-size: 1.3em;
-            margin-top: 30px;
+            color: var(--spexa-ink);
+            font-size: 1.35em;
+            margin-top: 34px;
             margin-bottom: 15px;
         }
         h3 {
@@ -30,9 +121,11 @@
         }
         p {
             margin-bottom: 15px;
+            color: #4f5f58;
         }
         ol, ul {
             margin-bottom: 15px;
+            color: #4f5f58;
         }
         a {
             color: #007bff;
@@ -41,9 +134,42 @@
         a:hover {
             text-decoration: underline;
         }
+        .site-footer {
+            margin: 34px 0 14px;
+            color: #888;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 12px;
+            }
+            .site-header {
+                align-items: flex-start;
+                flex-direction: column;
+                margin-top: 6px;
+            }
+            .site-nav {
+                justify-content: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
+    <header class="site-header">
+        <a class="brand" href="https://spexa.space/" aria-label="Spexa home">
+            <img src="https://spexa.space/brand/app-icon.webp" alt="" width="36" height="36">
+            <span>Spexa</span>
+        </a>
+        <nav class="site-nav" aria-label="Legal and support navigation">
+            <a href="https://pp.spexa.space/">Privacy</a>
+            <a href="https://tou.spexa.space/" aria-current="page">Terms</a>
+            <a href="https://support.spexa.space/">Support</a>
+        </nav>
+    </header>
+
+    <main>
+    <a class="back-link" href="https://spexa.space/">← Back to Spexa</a>
     <h1>Terms of Use</h1>
     <p>Last updated: April 21, 2026</p>
 
@@ -240,5 +366,8 @@
 
     <h2>15. Contact us</h2>
     <p>If you want to send any notice under these Terms or have any questions regarding the Service, you may contact us at <a href="mailto:support@spexa.space">support@spexa.space</a>.</p>
+    </main>
+
+    <p class="site-footer">© 2026 Spexa. All rights reserved.</p>
 </body>
 </html>
